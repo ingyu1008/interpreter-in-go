@@ -1,4 +1,4 @@
-package main
+package basics
 
 func main() {
 	// How to declare variables in go
