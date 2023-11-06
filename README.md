@@ -1,16 +1,18 @@
 # INTERPRETER IN GO
 
 ## 0. Basics of Go
-<details>
-    <summary>Details</summary>
-
-    - Learn basic grammar of Go
-    - Solve some basic algorithm problems in Go
-
-</details>
+- Learn basic grammar of Go
+- Solve some basic algorithm problems in Go
 
 ## 1. Writing Tests in Go
+- Learn to write tests in Go
+- Revision on basic grammar of Go
+
 ## 2. Defining Syntax
+- Learn what lexer does and how it works
+- Write testing code for the lexer
+- Implement the lexer for G in Go
+
 ## 3. Lexer
 ## 4. Parser
 ## 5. Evaluation
@@ -20,10 +22,6 @@
 ## Environment
 - Windows 11
 - go 1.21.3
-- following command should be excuted in the shell to avoid gopls error with vscode
-    ```sh
-    go work init
-    ```
 
 ## References
 - "Writing an Interpreter in Go", Thorsten Ball
