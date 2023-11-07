@@ -1,8 +1,11 @@
 package lexer
 
-import "testing"
+import (
+	"interpreter/3-Lexer/token"
+	"testing"
+)
 
-func TestCharParsing(t *testing.T) {
+func TestNextToken(t *testing.T) {
 	input := "+-*/%=(){}"
 	tests := []struct {
 		expectedType    token.TokenType
@@ -13,7 +16,7 @@ func TestCharParsing(t *testing.T) {
 		{token.AST, "*"},
 		{token.SLASH, "/"},
 		{token.PERC, "%"},
-		{token.EQUAL, "="},
+		{token.ASSIGN, "="},
 		{token.LPAREN, "("},
 		{token.RPAREN, ")"},
 		{token.LBRACE, "{"},
