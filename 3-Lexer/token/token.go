@@ -26,6 +26,18 @@ const (
 	//Comparators
 	EQ  = "=="
 	NEQ = "!="
+	GT  = ">"
+	GE  = ">="
+	LT  = "<"
+	LE  = "<="
+
+	//Boolean
+	AND = "&&"
+	OR  = "||"
+
+	//Bitwise
+	BAND = "&"
+	BOR  = "|"
 
 	//Seperators
 	COMMA     = ","
