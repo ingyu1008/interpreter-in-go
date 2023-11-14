@@ -21,6 +21,11 @@ const (
 	AST    = "*"
 	SLASH  = "/"
 	PERC   = "%"
+	BANG   = "!"
+
+	//Comparators
+	EQ  = "=="
+	NEQ = "!="
 
 	//Seperators
 	COMMA     = ","
@@ -33,5 +38,27 @@ const (
 
 	//keywords
 	FUNCTION = "FUNCTION"
-	LET      = "LET"
+	VAR      = "VAR"
+	TRUE     = "TRUE"
+	FALSE    = "FALSE"
+	RETURN   = "RETURN"
+	IF       = "IF"
+	ELSE     = "ELSE"
 )
+
+var keywords = map[string]TokenType{
+	"fn":     FUNCTION,
+	"var":    VAR,
+	"true":   TRUE,
+	"false":  FALSE,
+	"return": RETURN,
+	"if":     IF,
+	"else":   ELSE,
+}
+
+func LookupIdent(ident string) TokenType {
+	if tok, ok := keywords[ident]; ok {
+		return tok
+	}
+	return IDENT
+}
