@@ -15,6 +15,7 @@
 - Learn what lexer does and how it works
 - Write testing code for the lexer
 - Implement the lexer for G in Go
+
 ## 4. Parser
 ## 5. Evaluation
 ## 6. Putting it all Together

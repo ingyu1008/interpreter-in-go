@@ -21,7 +21,6 @@ const (
 	AST    = "*"
 	SLASH  = "/"
 	PERC   = "%"
-	BANG   = "!"
 
 	//Comparators
 	EQ  = "=="
@@ -31,22 +30,27 @@ const (
 	LT  = "<"
 	LE  = "<="
 
-	//Boolean
+	//Logical
 	AND = "&&"
 	OR  = "||"
 
 	//Bitwise
 	BAND = "&"
 	BOR  = "|"
+	BXOR = "^"
+	BANG = "!"
 
 	//Seperators
 	COMMA     = ","
 	SEMICOLON = ";"
 
-	LPAREN = "("
-	RPAREN = ")"
-	LBRACE = "{"
-	RBRACE = "}"
+	//Brackets
+	LPAREN   = "("
+	RPAREN   = ")"
+	LBRACE   = "{"
+	RBRACE   = "}"
+	LBRACKET = "["
+	RBRACKET = "]"
 
 	//keywords
 	FUNCTION = "FUNCTION"
